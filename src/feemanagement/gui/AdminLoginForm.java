@@ -34,11 +34,10 @@ public class AdminLoginForm extends JFrame {
             String username = txtUser.getText();
             String password = new String(txtPass.getPassword());
 
-            // Placeholder validation - update with DB logic later
             if (username.equals("admin") && password.equals("admin123")) {
                 JOptionPane.showMessageDialog(this, "Login successful");
-                // AdminDashboard (not yet implemented)
                 dispose();
+                new StudentManagementGUI(); // Show admin panel
             } else {
                 JOptionPane.showMessageDialog(this, "Invalid credentials");
             }

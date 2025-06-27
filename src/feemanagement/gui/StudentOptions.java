@@ -22,14 +22,7 @@ public class StudentOptions extends JFrame {
         btnPayFee.setBounds(80, 80, 180, 30);
         add(btnPayFee);
 
-        btnViewFee.addActionListener(e -> {
-            ViewFeeStructureForm view = new ViewFeeStructureForm(studentEmail);
-            view.setVisible(true);
-        });
-
-        btnPayFee.addActionListener(e -> {
-            PayFeeonline pay = new PayFeeonline(studentEmail);
-            pay.setVisible(true);
-        });
+        btnViewFee.addActionListener(e -> new ViewFeeStructureForm().setVisible(true));
+        btnPayFee.addActionListener(e -> new PayFeeonline(studentEmail).setVisible(true));
     }
 }

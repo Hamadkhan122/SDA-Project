@@ -20,8 +20,6 @@ public class ViewFeeStructureForm extends JFrame {
         add(scrollPane, BorderLayout.CENTER);
 
         loadFeeStructureData();
-
-        setVisible(true);
     }
 
     private void loadFeeStructureData() {
@@ -29,12 +27,7 @@ public class ViewFeeStructureForm extends JFrame {
         model.setColumnIdentifiers(new String[]{"ID", "Course", "Amount"});
 
         try {
-            // Replace with your actual DB connection info
-            String url = "jdbc:mysql://localhost:3306/feesystem";
-            String user = "root";
-            String password = "rafi033";
-
-            Connection conn = DriverManager.getConnection(url, user, password);
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/feesystem", "root", "rafi033");
             String sql = "SELECT id, course, amount FROM fee_structure";
             PreparedStatement stmt = conn.prepareStatement(sql);
             ResultSet rs = stmt.executeQuery();
@@ -50,16 +43,10 @@ public class ViewFeeStructureForm extends JFrame {
             rs.close();
             stmt.close();
             conn.close();
-
         } catch (SQLException e) {
             JOptionPane.showMessageDialog(this, "Error loading data: " + e.getMessage());
         }
 
         feeTable.setModel(model);
-    }
-
-    // Optional main method for testing standalone
-    public static void main(String[] args) {
-        SwingUtilities.invokeLater(() -> new ViewFeeStructureForm());
     }
 }

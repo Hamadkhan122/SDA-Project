@@ -1,3 +1,5 @@
+package feemanagement.core;
+
 public class StudentController {
     private StudentService service = new StudentService();
 

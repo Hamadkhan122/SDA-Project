@@ -19,14 +19,12 @@ public class MainMenu extends JFrame {
         add(studentLoginBtn);
 
         adminLoginBtn.addActionListener(e -> {
-            AdminLoginForm adminLogin = new AdminLoginForm();
-            adminLogin.setVisible(true);
+            new AdminLoginForm().setVisible(true);
             dispose();
         });
 
         studentLoginBtn.addActionListener(e -> {
-            StudentLoginForm studentLogin = new StudentLoginForm();
-            studentLogin.setVisible(true);
+            new StudentLoginForm().setVisible(true);
             dispose();
         });
     }

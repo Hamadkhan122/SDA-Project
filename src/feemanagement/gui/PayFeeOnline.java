@@ -4,12 +4,10 @@ import javax.swing.*;
 import java.awt.event.*;
 import java.sql.*;
 import java.time.LocalDate;
-import feemanagement.db.DBConnection;
 
 public class PayFeeonline extends JFrame {
     private String studentEmail;
     private JTextField txtAmount;
-    private JButton btnPay;
 
     public PayFeeonline(String studentEmail) {
         this.studentEmail = studentEmail;
@@ -28,15 +26,11 @@ public class PayFeeonline extends JFrame {
         txtAmount.setBounds(140, 30, 150, 25);
         add(txtAmount);
 
-        btnPay = new JButton("Pay Now");
+        JButton btnPay = new JButton("Pay Now");
         btnPay.setBounds(100, 80, 120, 30);
         add(btnPay);
 
-        btnPay.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                payFee();
-            }
-        });
+        btnPay.addActionListener(e -> payFee());
     }
 
     private void payFee() {
@@ -50,7 +44,7 @@ public class PayFeeonline extends JFrame {
         try {
             double amount = Double.parseDouble(amountStr);
 
-            Connection conn = DBConnection.getConnection();
+            Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/feesystem", "root", "rafi033");
 
             // Get student_id from email
             int studentId = -1;

@@ -23,13 +23,11 @@ public class StudentPanel extends JFrame {
         add(btnPayFee);
 
         btnViewFeeStructure.addActionListener(e -> {
-           // Open the fee structure form
-ViewFeeStructureForm viewForm = new ViewFeeStructureForm();
+            new ViewFeeStructureForm().setVisible(true);
         });
 
         btnPayFee.addActionListener(e -> {
-            PayFeeonline payFee = new PayFeeonline(studentEmail);
-            payFee.setVisible(true);
+            new PayFeeonline(studentEmail).setVisible(true);
         });
     }
 }

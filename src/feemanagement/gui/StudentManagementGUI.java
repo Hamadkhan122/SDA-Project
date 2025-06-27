@@ -1,6 +1,11 @@
+package feemanagement.gui;
+
 import javax.swing.*;
 import javax.swing.table.DefaultTableModel;
 import java.awt.event.*;
+
+import feemanagement.core.StudentController;
+import feemanagement.core.Student;
 
 public class StudentManagementGUI extends JFrame {
     private JTextField idField, nameField, emailField;
@@ -99,9 +104,9 @@ public class StudentManagementGUI extends JFrame {
     }
 
     private void refreshTable() {
-        tableModel.setRowCount(0); // Clear table
+        tableModel.setRowCount(0);
         for (int i = 1; i <= 100; i++) {
-            Student s = controller.getService().getStudent(i); // ✅ Fixed access to service
+            Student s = controller.getService().getStudent(i);
             if (s != null) {
                 tableModel.addRow(new Object[]{s.getId(), s.getName(), s.getEmail()});
             }

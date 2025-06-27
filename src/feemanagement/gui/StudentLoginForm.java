@@ -45,9 +45,8 @@ public class StudentLoginForm extends JFrame {
 
                 if (rs.next()) {
                     JOptionPane.showMessageDialog(this, "Login successful");
-                    StudentPanel panel = new StudentPanel(email);
-                    panel.setVisible(true);
                     dispose();
+                    new StudentPanel(email).setVisible(true);
                 } else {
                     JOptionPane.showMessageDialog(this, "Invalid credentials");
                 }

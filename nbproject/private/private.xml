@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/SDA/SDA-Project/src/feemanagement/core/StudentRepository.java</file>
+            <file>file:/C:/SDA/SDA-Project/src/feemanagement/core/Main.java</file>
+            <file>file:/C:/SDA/SDA-Project/src/feemanagement/core/StudentController.java</file>
+            <file>file:/C:/SDA/SDA-Project/src/feemanagement/core/StudentService.java</file>
+            <file>file:/C:/SDA/SDA-Project/src/feemanagement/gui/StudentManagementGUI.java</file>
+            <file>file:/C:/SDA/SDA-Project/src/feemanagement/gui/MainMenu.java</file>
+            <file>file:/C:/SDA/SDA-Project/src/feemanagement/core/Student.java</file>
+            <file>file:/C:/SDA/SDA-Project/src/feemanagement/gui/AdminLoginForm.java</file>
+            <file>file:/C:/SDA/SDA-Project/src/feemanagement/gui/PayFeeonline.java</file>
+            <file>file:/C:/SDA/SDA-Project/src/feemanagement/gui/StudentLoginForm.java</file>
+            <file>file:/C:/SDA/SDA-Project/src/feemanagement/gui/StudentPanel.java</file>
+            <file>file:/C:/SDA/SDA-Project/src/feemanagement/core/StudentValidator.java</file>
+            <file>file:/C:/SDA/SDA-Project/src/feemanagement/gui/StudentOptions.java</file>
+            <file>file:/C:/SDA/SDA-Project/src/feemanagement/gui/ViewFeeStructureForm.java</file>
+        </group>
+    </open-files>
+</project-private>
