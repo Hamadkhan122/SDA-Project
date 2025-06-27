@@ -1,5 +1,6 @@
 # Hamad Khan Video Link
 https://drive.google.com/drive/folders/19-h_9C-doPQitIkFdn9VgRcqg_8sNTNY?usp=sharing
+# please watch both videos due to error in first video
 
 # Hamad Khan 006
 # Rafi Ullah 033
